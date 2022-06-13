@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageOrderProduct"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/fruit" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gbold"
+                android:text="Apple"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/gbold"
+                android:text="$50"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvProductWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProductName"
+                android:fontFamily="@font/gmidum"
+                android:text="250*1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvProductStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProductName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gmidum"
+                android:text="Cancelled"
+                android:textColor="#BF0404"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

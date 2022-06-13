@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071515018660",
+    "project_id": "krushna-e2e1b",
+    "storage_bucket": "krushna-e2e1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071515018660:android:b3d2fc479087678ff9cd31",
+        "android_client_info": {
+          "package_name": "com.krushna.veginew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071515018660-ueasr5g2vvkdk3vstu8er1s4aso0dtkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPaLFJA_9w4pIT97l6y85UdxIbDgq4P2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071515018660-ueasr5g2vvkdk3vstu8er1s4aso0dtkf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

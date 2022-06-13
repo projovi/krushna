@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/off_white"
+                    android:fontFamily="@font/gsemibold"
+                    android:paddingVertical="13dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/order_details"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/date_of_order"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="09 Sep 2020 at 07:34 PM " />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/order_status"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:background="@drawable/bg_round"
+                            android:backgroundTint="@color/orange"
+                            android:fontFamily="@font/gmidum"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="4dp"
+                            android:text="Processing"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:text="Cancelled" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/off_white"
+                    android:fontFamily="@font/gsemibold"
+                    android:paddingVertical="13dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gbold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:text="Anurag savaliya" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/gmidum"
+                        android:textSize="16sp"
+                        tools:text="187 kshama soc hirabaug near Dharam nagar  A.K. road surat gujrat india 395008 " />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_outline_email_24" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/gmidum"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            tools:text="anurag.s.123123@gmail.com" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_outline_phone_android_24" />
+
+                        <TextView
+                            android:id="@+id/tvMobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/gmidum"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            tools:text="7801916340" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/off_white"
+                    android:fontFamily="@font/gsemibold"
+                    android:paddingVertical="13dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/payment_deatails"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/order_id"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="GNG18111FKZFRTYS" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/payment_type"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvPaymentType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="Cash on Delivery - $38.00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/order_items"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/sub_amount"
+                            android:textSize="14sp" />
+
+                        <TextView
+
+                            android:id="@+id/tvSubAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="$ 8.00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/coupen_amount"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvCoupenAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="$ 0.00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/sheeping_charges"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvSheepingCharges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="$ 30.00" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/gmidum"
+                            android:text="@string/total_amounttext"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="130dp"
+                            android:fontFamily="@font/gmidum"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            tools:text="$ 38.00" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_send_feed_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gsemibold"
+                    android:paddingVertical="13dp"
+                    android:text="@string/send_feedback"
+                    android:textColor="@color/orange_light"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/lytrating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/off_white"
+                        android:fontFamily="@font/gsemibold"
+                        android:paddingVertical="13dp"
+                        android:paddingStart="10dp"
+                        android:text="@string/rating"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="-30dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:scaleX=".7"
+                        android:scaleY=".7"
+                        android:stepSize="1" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>
